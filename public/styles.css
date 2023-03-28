@@ -41,5 +41,14 @@
 .marker-text{
     font-size: 14px;
     font-weight: 600;
-    color: white;
+    color: white;    
+}
+
+.sasb-logo-navbar {
+    max-width: 300px;
+}
+
+.sasb-navbar {
+    position: absolute;
+    z-index: 1;
 }
