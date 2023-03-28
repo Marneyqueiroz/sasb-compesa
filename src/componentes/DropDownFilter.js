@@ -4,7 +4,7 @@ const DropDownFilter = ({opcoes }) => {
 
 
     return <>
-        <select className="form-select" aria-label="Default select example"  defaultValue={0}>
+        <select className="form-select mx-2" aria-label="Default select example"  defaultValue={0}>
             {
                 opcoes.map((opcao, indice) => {
                     return (
