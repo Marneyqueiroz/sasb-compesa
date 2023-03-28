@@ -5,7 +5,7 @@ import { danoPotencial } from '../mocks/danoPotencial';
 import logo from '../assets/sasb_compesa_logo.png'
 
 
-const NavBar = (setBusca) => {
+const NavBar = ({setBusca, setCategoria, setDano}) => {
     return (
         <div className="container-fluid sasb-navbar">
             <div className="row py-4">
@@ -18,10 +18,12 @@ const NavBar = (setBusca) => {
                     <Search setBusca={setBusca} />
                 </div>
                 <div className="col-2">
-                    <DropDownFilter opcoes={categorias} />
+                    <DropDownFilter opcoes={categorias} 
+                    setFilter = {setCategoria} />
                 </div>
                 <div className="col-2">
-                    <DropDownFilter opcoes={danoPotencial} />
+                    <DropDownFilter opcoes={danoPotencial} 
+                    setFilter = {setDano}/>
                 </div>
                 <div className="col-2">
                     <button className="btn btn-primary">

@@ -1,6 +1,5 @@
 import GoogleMapReact from "google-map-react";
 
-import {barragens} from "../mocks/barragens";
 
 import Marker from "./Marker";
 
@@ -13,9 +12,7 @@ const DEFAULT_CENTER = {
 };
 
 const Mapa = ({ listaBarragem }) => {
-
-  console.log(listaBarragem)
-
+ 
   return (
     <div className="google-map">
       <GoogleMapReact
